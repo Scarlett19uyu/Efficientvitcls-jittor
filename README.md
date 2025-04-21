@@ -27,3 +27,8 @@ applications/efficientvit_cls/configs/imagenet/default.yaml \
     --data_provider.data_dir /root/autodl-tmp/imagenet/ \
     --path efficientvit_cls/imagenet/efficientvit_b0_r224/
 ```
+# pytorch版本
+![image](https://github.com/user-attachments/assets/8e51cc9c-a5d8-419b-935b-c9a24f9aef64)
+
+# jittor版本
+![image](https://github.com/user-attachments/assets/1052ba3c-2964-430b-809e-1d7161dd25df)
