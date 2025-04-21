@@ -6,23 +6,24 @@ CUDA  11.3
 
 # data
 原数据集为ImageNet，共1000个分类，此处我们使用其子数据集，Imagenet100，在autodl有公共数据
-"""python
+```python
 unzip /root/autodl-pub/ImageNet100/imagenet100.zip
-"""
+```
 
 # 训练脚本
-"""python
+```python
 python applications/efficientvit_cls/train_efficientvit_cls_model.py \
 applications/efficientvit_cls/configs/imagenet/default.yaml \
     --amp bf16 \
     --data_provider.data_dir /root/autodl-tmp/imagenet/ \
     --path efficientvit_cls/imagenet/efficientvit_b0_r224/
-"""
+```
 
 # 测试脚本
-"""
+```python
 python applications/efficientvit_cls/eval_efficientvit_cls_model.py \
 applications/efficientvit_cls/configs/imagenet/default.yaml \
     --amp bf16 \
     --data_provider.data_dir /root/autodl-tmp/imagenet/ \
     --path efficientvit_cls/imagenet/efficientvit_b0_r224/
+```
